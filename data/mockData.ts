@@ -1,0 +1,91 @@
+import { PlayerCardData, TournamentYear } from '../types';
+
+export const playerCards: PlayerCardData[] = [
+  {
+    id: 1,
+    name: 'CR11',
+    rating: 94,
+    position: 'CF',
+    photoUrl: 'https://picsum.photos/seed/cr11/200/200',
+    clubLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=FCB',
+    countryCode: 'AR',
+    stats: { pac: 182, sho: 186, pas: 162, dri: 192, def: 105, phy: 138 },
+    cardType: 'gold',
+  },
+  {
+    id: 2,
+    name: 'MR. Rex',
+    rating: 90,
+    position: 'RW',
+    photoUrl: 'https://picsum.photos/seed/mrex/200/200',
+    clubLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=MCI',
+    countryCode: 'GB-ENG',
+    stats: { pac: 158, sho: 164, pas: 148, dri: 186, def: 125, phy: 124 },
+    cardType: 'blue',
+  },
+  {
+    id: 3,
+    name: 'Vikram',
+    rating: 88,
+    position: 'CAM',
+    photoUrl: 'https://picsum.photos/seed/vikram/200/200',
+    clubLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=MUN',
+    countryCode: 'ES',
+    stats: { pac: 142, sho: 124, pas: 135, dri: 182, def: 128, phy: 132 },
+    cardType: 'purple',
+  },
+  {
+    id: 4,
+    name: 'V. Choubey',
+    rating: 91,
+    position: 'ST',
+    photoUrl: 'https://picsum.photos/seed/vchoubey/200/200',
+    clubLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=JUV',
+    countryCode: 'IT',
+    stats: { pac: 170, sho: 180, pas: 150, dri: 175, def: 110, phy: 160 },
+    cardType: 'gold',
+  },
+];
+
+export const hallOfFameData: TournamentYear[] = [
+  {
+    year: 2023,
+    winner: {
+      name: 'Dave',
+      photoUrl: 'https://picsum.photos/seed/dave/200/200',
+      team: 'Real Madrid',
+      teamLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=RMD',
+    },
+    finalist: {
+      name: 'Charlie',
+      team: 'Liverpool',
+      teamLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=LIV',
+    },
+    finalScore: '3 - 2',
+    finalScoreScreenshotUrl: 'https://picsum.photos/seed/score2023/400/200',
+    matchOfTheYearHighlight: 'A dramatic comeback in the last 10 minutes, sealed by a stunning free-kick.',
+    topScorer: 'Dave (12 goals)',
+    mvp: 'Dave',
+    bestGoal: 'Charlie - Bicycle kick in the semi-final',
+  },
+    {
+    year: 2022,
+    winner: {
+      name: 'Alice',
+      photoUrl: 'https://picsum.photos/seed/alice/200/200',
+      team: 'Paris Saint-Germain',
+      teamLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=PSG',
+    },
+    finalist: {
+      name: 'Bob',
+      team: 'Bayern Munich',
+      teamLogoUrl: 'https://via.placeholder.com/64/FFFFFF/000000?text=BAY',
+    },
+    finalScore: '4 - 1',
+    finalScoreScreenshotUrl: 'https://picsum.photos/seed/score2022/400/200',
+    matchOfTheYearHighlight: 'A dominant performance by Alice, controlling the midfield throughout the game.',
+    topScorer: 'Alice (15 goals)',
+    mvp: 'Alice',
+    bestGoal: 'Alice - 30-yard screamer in the final.',
+  },
+];
