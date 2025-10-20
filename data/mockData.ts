@@ -7,12 +7,17 @@ const realMadridLogo = 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Rea
 const juventusLogo = 'https://ssl.gstatic.com/onebox/media/sports/logos/ovK8EHD-qJ9LS9naYsyb4A_96x96.png';
 const finalScreenshot = 'https://i.ytimg.com/vi/g-a9k2G7_yM/maxresdefault.jpg';
 
+const cr11PhotoUrl = '/images/cr11.png';
+const mrRexPhotoUrl = '/images/mr_rex.png';
+const mrBikromPhotoUrl = '/images/mr_bikrom.png';
+const vChoubeyPhotoUrl = '/images/v_choubey.png';
+
 export const playerCards: PlayerCardData[] = [
   {
     id: 1,
     name: 'CR11',
     rating: 94,
-    photoUrl: 'https://picsum.photos/seed/cr11/200/200',
+    photoUrl: cr11PhotoUrl || 'https://picsum.photos/seed/cr11/200/200',
     clubLogoUrl: bayernLogo,
     countryCode: 'AR',
     stats: { pac: 182, sho: 186, pas: 162, dri: 192, def: 105, phy: 138 },
@@ -26,7 +31,7 @@ export const playerCards: PlayerCardData[] = [
     id: 2,
     name: 'MR. Rex',
     rating: 90,
-    photoUrl: 'https://picsum.photos/seed/mrex/200/200',
+    photoUrl: mrRexPhotoUrl || 'https://picsum.photos/seed/mrex/200/200',
     clubLogoUrl: manCityLogo,
     countryCode: 'GB-ENG',
     stats: { pac: 158, sho: 164, pas: 148, dri: 186, def: 125, phy: 124 },
@@ -40,7 +45,7 @@ export const playerCards: PlayerCardData[] = [
     id: 3,
     name: 'MR. Bikrom',
     rating: 88,
-    photoUrl: 'https://picsum.photos/seed/vikram/200/200',
+    photoUrl: mrBikromPhotoUrl || 'https://picsum.photos/seed/vikram/200/200',
     clubLogoUrl: realMadridLogo,
     countryCode: 'ES',
     stats: { pac: 142, sho: 124, pas: 135, dri: 182, def: 128, phy: 132 },
@@ -54,7 +59,7 @@ export const playerCards: PlayerCardData[] = [
     id: 4,
     name: 'V. Choubey',
     rating: 91,
-    photoUrl: 'https://picsum.photos/seed/vchoubey/200/200',
+    photoUrl: vChoubeyPhotoUrl || 'https://picsum.photos/seed/vchoubey/200/200',
     clubLogoUrl: juventusLogo,
     countryCode: 'IT',
     stats: { pac: 170, sho: 180, pas: 150, dri: 175, def: 110, phy: 160 },
