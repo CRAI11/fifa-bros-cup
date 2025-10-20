@@ -5,9 +5,10 @@ import { FootballIcon } from './icons';
 
 interface PlayerCarouselProps {
   players: PlayerCardData[];
+  onPlayerClick: (player: PlayerCardData) => void;
 }
 
-const PlayerCarousel: React.FC<PlayerCarouselProps> = ({ players }) => {
+const PlayerCarousel: React.FC<PlayerCarouselProps> = ({ players, onPlayerClick }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -75,8 +76,9 @@ const PlayerCarousel: React.FC<PlayerCarouselProps> = ({ players }) => {
         {players.map((player, index) => (
           <div
             key={player.id}
-            className="absolute transition-all duration-700 ease-in-out"
+            className="absolute transition-all duration-700 ease-in-out cursor-pointer"
             style={getCardStyle(index)}
+            onClick={() => getCardStyle(index).zIndex === 10 && onPlayerClick(player)}
           >
             <PlayerCard player={player} />
           </div>
