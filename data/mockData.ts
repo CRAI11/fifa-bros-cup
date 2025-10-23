@@ -76,7 +76,7 @@ export const hallOfFameData: TournamentYear[] = [
     year: 2025,
     winner: {
       name: 'MR. Rex',
-      photoUrl: 'https://picsum.photos/seed/mrex/200/200',
+      photoUrl: mrRexPhotoUrl || 'https://picsum.photos/seed/mrex/200/200',
       team: 'Manchester City',
       teamLogoUrl: manCityLogo,
       cardColor: 'blue',
